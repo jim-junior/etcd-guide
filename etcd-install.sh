@@ -2,6 +2,9 @@
 
 set -e
 
+echo "You are running a script from https://github.com/jim-junior/etcd-guide"
+echo "This script will install etcd and etcdctl to /usr/local/bin"
+
 # Determine OS and ARCH
 OS="linux"
 ARCH=$(uname -m)
@@ -39,5 +42,5 @@ sudo mv "${DIRNAME}/etcdctl" /usr/local/bin/
 # Clean up
 rm -rf "$FILENAME" "$DIRNAME"
 
-echo "✅ etcd and etcdctl installed to /usr/local/bin"
+echo "SUCCESS: etcd and etcdctl installed to /usr/local/bin"
 echo "🎉 Done!"
